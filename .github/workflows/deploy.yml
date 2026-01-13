@@ -1,11 +1,17 @@
 name: Deploy to GitHub Pages
 
+# GitHub Pages aktifleştirilene kadar workflow devre dışı
+# Pages aktifleştirildikten sonra bu dosyayı tekrar aktif edin
+
+# on:
+#   push:
+#     branches:
+#       - main
+#       - master
+#   workflow_dispatch:
+
 on:
-  push:
-    branches:
-      - main
-      - master
-  workflow_dispatch:
+  workflow_dispatch:  # Sadece manuel çalıştırma
 
 permissions:
   contents: read
