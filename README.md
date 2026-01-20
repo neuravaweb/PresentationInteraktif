@@ -56,45 +56,7 @@ npm run dev
 
 ```bash
 npm run build
-```
-
-The static files will be generated in the `out` directory.
-
-## GitHub Pages Deployment
-
-This project is configured for automatic deployment to GitHub Pages.
-
-### Automatic Deployment (Recommended)
-
-1. **Push to GitHub:**
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial commit"
-   git branch -M main
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   git push -u origin main
-   ```
-
-2. **Enable GitHub Pages:**
-   - Go to your repository on GitHub
-   - Navigate to **Settings** → **Pages**
-   - Under **Source**, select **GitHub Actions**
-   - The workflow will automatically build and deploy on every push to `main` branch
-
-3. **Your site will be available at:**
-   ```
-   https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
-   ```
-
-### Manual Deployment
-
-If you prefer to deploy manually:
-
-```bash
-npm run build
-# The 'out' directory contains the static files
-# Upload the contents of 'out' to your GitHub Pages branch
+npm start
 ```
 
 ## Project Structure

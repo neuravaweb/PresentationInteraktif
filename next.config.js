@@ -1,16 +1,15 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
-const repoName = 'interactive-phising-sim';
+const repo = "PresentationInteraktif";
 
 const nextConfig = {
   reactStrictMode: true,
-  output: 'export',
-  basePath: isProd ? `/${repoName}` : '',
-  assetPrefix: isProd ? `/${repoName}` : '',
+  // Configure Next.js for static export suitable for GitHub Pages
+  output: "export",
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}/`,
   images: {
     unoptimized: true,
   },
-  trailingSlash: true,
 };
 
 module.exports = nextConfig;
